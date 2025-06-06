@@ -70,6 +70,20 @@ $ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 $ python main.py
 ```
 
+#### Quick install via script
+
+If you prefer a one‑step setup, run the bundled installer:
+
+```bash
+./install.sh
+```
+
+This will:
+
+1. Copy the Python files to **~/.local/share/zearch** (or a directory you specify).
+2. Create a wrapper command at **~/.local/bin/zearch**.
+3. Remind you to add that directory to your `PATH` so you can simply type `zearch` from any terminal.
+
 There are **no external dependencies**, so `pip install` is not required.
 
 ### Usage
