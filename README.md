@@ -67,7 +67,7 @@ $ python -m venv .venv
 $ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # 3. Run the tool
-$ python main.py
+$ python python/main.py
 ```
 
 #### Quick install via script
@@ -88,7 +88,7 @@ There are **no external dependencies**, so `pip install` is not required.
 
 ### Usage
 
-Running `python main.py` presents an interactive menu:
+Running `python python/main.py` presents an interactive menu:
 
 ```
 === Zearch (python) ===
@@ -106,7 +106,7 @@ A            # choose **A**dd new index
 Directory to index: /path/to/folder
 Friendly name for index: work_docs
 ```
-The index (a plain‑text list of file paths) is saved to `indexes/work_docs.txt`.
+The index (a plain‑text list of file paths) is saved to `python/indexes/work_docs.txt`.
 
 #### Search an index
 ```
@@ -123,8 +123,8 @@ Use **U** to refresh an existing index if files have changed, or **D** to remove
 
 | Path | Purpose |
 |------|---------|
-| `indexes/` | Folder that holds one `<name>.txt` file per index |
-| `config.json` | Stores default directory, exclusions, etc. (auto‑created) |
+| `python/indexes/` | Folder that holds one `<name>.txt` file per index |
+| `python/config.json` | Stores default directory, exclusions, etc. (auto‑created) |
 
 ### Packaging / advanced use
 The Python scripts are intentionally simple so you can copy them into other projects or package them with tools like **pipx**:

@@ -29,7 +29,7 @@ fi
 printf '\n==> Creating wrapper at %s\n' "$WRAPPER"
 cat > "$WRAPPER" <<'EOF'
 #!/usr/bin/env bash
-python "$HOME/.local/share/zearch/main.py" "$@"
+python "$HOME/.local/share/zearch/python/main.py" "$@"
 EOF
 chmod +x "$WRAPPER"
 
